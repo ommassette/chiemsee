@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chiemsee Kitchen · Regional Soulfood</title>
     <style>
-        /* ── reset & root ── */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:wght@400;500;700&display=swap');
 
 :root {
     --blue-bg: #5A6485;
-    --blue-fg: #F3EFE6;
+    --blue-fg: #C94A5A;
     --cream-bg: #E8DDD0;
     --cream-fg: #C94A5A;
 }
@@ -82,7 +81,6 @@ body::before {
 /* ── header ── */
 header {
     position: relative;
-    background-color: var(--blue-bg);
     color: var(--blue-fg);
     padding: 12vh 20px;
     display: flex;
@@ -257,8 +255,8 @@ main .wobbly-edge path {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    width: 92%;
-    max-width: 1100px;
+    width: 100%;
+    max-width: 100%;
     margin: 20px 0 70px 0;
     position: relative;
     z-index: 2;
@@ -371,7 +369,6 @@ main .wobbly-edge path {
 /* ── FOOTER ── */
 .footer-wrapper {
     width: 100%;
-    background-color: var(--blue-bg);
     color: var(--blue-fg);
     margin-top: 0;
     padding: 50px 20px 40px;
@@ -385,10 +382,10 @@ main .wobbly-edge path {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 30px 40px;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-brand {
@@ -413,6 +410,7 @@ main .wobbly-edge path {
     font-family: 'Fredoka', sans-serif;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 16px 36px;
     font-size: 0.95rem;
     font-weight: 400;
@@ -475,6 +473,14 @@ main .wobbly-edge path {
     }
     .footer-brand {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery.mid-bleed {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin: 10px 0 40px 0;
     }
 }
 
@@ -656,13 +662,6 @@ main .wobbly-edge path {
                 <div class="footer-brand">
                     chiemsee KITCHEN
                     <span>Regional · Soulfood</span>
-                </div>
-
-                <div class="footer-links">
-                    <a href="#">Impressum</a>
-                    <a href="#">Datenschutz</a>
-                    <a href="#">Kontakt</a>
-                    <a href="#">Reservierung</a>
                 </div>
 
                 <div class="footer-copy">
